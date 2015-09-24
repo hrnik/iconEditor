@@ -18,7 +18,7 @@
   },
   "engines": {
     "node": "^2.11.0"
-  }
+  },
   "scripts": {
     "postinstall": "bower install"
   }
