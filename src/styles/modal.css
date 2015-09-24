@@ -1,0 +1,58 @@
+.ngdialog.ngdialog-theme-plain.i8-modal-editor  .ngdialog-content{
+		width: 670px;
+		padding: 0;
+}
+
+
+.modal-editor-left{
+	position: absolute;
+	background: #f3f3f3;
+	width: 150px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	height: 100%;
+}
+
+.modal-editor-right{
+	margin-left: 150px;
+	padding: 45px 55px 40px 40px;
+}
+
+.modal-editor-wrapper{
+	padding-bottom: 35px;
+}
+.modal-editor-options{
+	float: left;
+}
+
+.modal-editor-canvas-containe{
+	float: right;
+}
+
+.modal-editor-canvas{
+	border: 2px dashed #e1e1e1;
+}
+
+.modal-editor-btn{
+	float: right;
+}
+
+h1.modal-editor-title{
+	font-size: 35px;
+	color: #666666;
+	font-weight: normal;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.modal-editor-text input{
+	width: 150px;
+}
+
+.modal-editor-size input{
+	width: 100px;
+}
+
+.modal-editor-option{
+	margin-bottom: 15px;
+}

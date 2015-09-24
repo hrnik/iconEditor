@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="i8Editor">
+	<head>
+		<meta charset="UTF-8">
+		<title>Icons8 add text</title>
+		<!-- Vendor css -->
+		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+		<link rel="stylesheet" href="bower_components/ngDialog/css/ngDialog.css">
+		<link rel="stylesheet" href="bower_components/ngDialog/css/ngDialog-theme-plain.css">
+		<!-- Vendor css -->
+		<!-- Source css -->
+		<link rel="stylesheet" href="src/fonts/fonts.css">
+		<link rel="stylesheet" href="src/styles/main.css">
+		<link rel="stylesheet" href="src/styles/modal.css">
+		<!-- Source css -->
+	</head>
+	<body>
+		<ui-view></ui-view>
+		
+		<!-- Vendor scripts -->
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/ngDialog/js/ngDialog.js"></script>
+		<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+		<script src="bower_components/paper/dist/paper-full.js"></script>
+		
+		<!-- Vendor scripts -->
+		<!-- Source scripts -->
+		<script src="src/app.js"></script>
+		<script src="src/app/controllers/mainController.js"></script>
+		<script src="src/app/controllers/modalEditorController.js"></script>
+		
+		<script src="src/app/services/paperService.js"></script>
+		
+		<script src="src/app/directives/paperEditor/paperEditor.js"></script>
+		<!-- Source scripts -->
+	</body>
+</html>

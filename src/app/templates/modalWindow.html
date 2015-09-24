@@ -1,0 +1,20 @@
+<div class="modal-editor-left"></div>
+<div class="modal-editor-right">
+	<div class="modal-editor-wrapper clearfix">
+		<div class="modal-editor-options">
+			<h1 class="modal-editor-title">Add text</h1>
+			<div class="modal-editor-option modal-editor-text">
+				<input class="i8-input" type="text" ng-model="modalEditorCtrl.iconText">				
+			</div>
+			<div class="modal-editor-option modal-editor-size">
+				<input class="i8-input" type="number" ng-model="modalEditorCtrl.fontSize">			
+			</div>
+		</div>
+		<div class="modal-editor-canvas-containe">
+		<paper-editor icon-text="modalEditorCtrl.iconText" font-size="modalEditorCtrl.fontSize" paper-editor-ctrl="modalEditorCtrl.paperEditorCtrl"></paper-editor>
+	</div>
+</div>
+<div class="modal-editor-action clearfix">
+	<a class="i8-btn modal-editor-btn" ng-click="modalEditorCtrl.paperEditorCtrl.exportSvg('exportSvg')">Apply</a>
+</div>
+</div>

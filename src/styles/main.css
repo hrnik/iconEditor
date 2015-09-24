@@ -1,0 +1,45 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+* {
+	font-family: 'helvetica-lightregular', Arial;
+	
+}
+
+
+.i8-btn{
+	 display: inline-block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;	
+	background: #e74c3c;
+	color: #fff;
+	font-size: 22px;
+	border-radius: 0;
+	border: none;
+	padding: 5px 25px;
+	cursor: pointer;
+}
+
+.i8-btn:hover{
+	background: #FB523F;
+}
+
+.i8-input{
+	padding: 5px 15px;
+}
+

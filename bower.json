@@ -1,0 +1,22 @@
+{
+  "name": "icons8",
+  "version": "0.0.0",
+  "authors": [
+    "hrnik <nkhristinin@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.6",
+    "angular-ui-router": "ui-router#~0.2.15",
+    "ngDialog": "~0.5.1",
+    "normalize-css": "normalize.css#~3.0.3",
+    "paper": "~0.9.24"
+  }
+}
