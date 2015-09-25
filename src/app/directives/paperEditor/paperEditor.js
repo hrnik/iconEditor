@@ -8,6 +8,9 @@ function paperEditor(paperService) {
 		scope:{
 			iconText: '=',
 			fontSize: '=',
+			fontWeight: '=',
+			fontColor: '=',
+			fontFamily: '=',
 			paperEditorCtrl: '='
 		},
 		templateUrl: 'src/app/directives/paperEditor/paperEditor.html',
@@ -18,6 +21,9 @@ function paperEditor(paperService) {
 			var svgWidth = 140;
 			var iconText = $scope.iconText || 'added text';
 			var fontSize = $scope.fontSize || 35;
+			var fontWeight = $scope.fontWeight || 'normal';
+			var fontColor = $scope.fontColor || '#000';
+			var fontFamily = $scope.fontFamily || 'helvetica-lightregular';
 
 			var canvas = element.children()[0];
 			var project = paper.setup(canvas);
@@ -29,11 +35,12 @@ function paperEditor(paperService) {
 			//svgIcon.position = new paper.Point((canvas.height-svgHeight)/2,(canvas.width-svgWidth)/2);
 			svgIcon.position = new paper.Point(canvas.width/2,canvas.height/2);
 
+
 			var text = new paper.PointText({			
 				content: iconText,
-				fillColor: '#000',
-				fontFamily: 'helvetica-lightregular',
-				fontWeight: 'normal',
+				fillColor: fontColor,
+				font: fontFamily,
+				fontWeight: fontWeight,
 				fontSize: fontSize
 			});
 
@@ -58,6 +65,21 @@ function paperEditor(paperService) {
 			$scope.$watch('fontSize', function (value) {
 				text.fontSize = value;
 				paper.view.update();
+			});		
+
+			$scope.$watch('fontWeight', function (value) {
+				text.fontWeight = value;
+				paper.view.update();
+			});
+
+			$scope.$watch('fontColor', function (value) {
+				text.fillColor = value;
+				paper.view.update();
+			});	
+
+			$scope.$watch('fontFamily', function (value) {
+				text.font = value;
+				paper.view.update();
 			});
 
 				// Draw the view now:
@@ -71,7 +93,9 @@ function paperEditor(paperService) {
 
 
 						function exportSvg(id) {
-							var svg = paper.project.exportSVG();
+							var svg = paper.project.exportSVG({
+								matchShapes:true
+							});
 							document.getElementById(id).appendChild(svg);
 						}
 				}

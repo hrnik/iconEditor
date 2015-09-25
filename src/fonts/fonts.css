@@ -14,3 +14,13 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: "ZhiznRegular";
+    src: url("ZhiznRegular.eot");
+    src: url("ZhiznRegular.eot?#iefix")format("embedded-opentype"),
+    url("ZhiznRegular.woff") format("woff"),
+    url("ZhiznRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

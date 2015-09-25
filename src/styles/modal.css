@@ -53,6 +53,11 @@ h1.modal-editor-title{
 	width: 100px;
 }
 
+.modal-editor-color input{
+	width: 100px;
+	border: none;
+}
+
 .modal-editor-option{
 	margin-bottom: 15px;
 }

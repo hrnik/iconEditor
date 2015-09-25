@@ -3,6 +3,7 @@ var gulp = require('gulp'),
  
 gulp.task('connect', function() {
   connect.server({
+     root: ['./'],
     livereload: true
   });
 });
@@ -18,7 +19,7 @@ gulp.task('js', function () {
 });
 
 gulp.task('css', function () {
-  gulp.src('./src/**/.css')
+  gulp.src('./src/**/*.css')
     .pipe(connect.reload());
 });
  

@@ -1,0 +1,27 @@
+input[type="checkbox"] {
+    display:none;            
+}
+input[type="checkbox"] + label{
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+}
+input[type="checkbox"] + label::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    height: 20px;
+    width: 20px;
+    background-image: url('../images/checkbox.png');
+    background-repeat: no-repeat;
+}
+input[type="checkbox"] + label::before {
+    background-position: 0px 0px;    
+}
+
+input[type="checkbox"]:checked + label::before {
+     background-position: -22px 0px;
+}
