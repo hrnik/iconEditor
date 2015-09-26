@@ -8,6 +8,6 @@ function modalEditorController() {
 	vm.fontSize = 28;
 	vm.fontWeight = 'normal';
 	vm.fontColor = '#000000';
-	vm.fontFamily = 'helvetica-lightregular';
+	vm.fontFamily = 'helvetica_light-webfont.ttf';
 	vm.paperEditorCtrl = {};
 }

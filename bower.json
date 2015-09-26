@@ -17,6 +17,7 @@
     "angular-ui-router": "ui-router#~0.2.15",
     "ngDialog": "~0.5.1",
     "normalize-css": "normalize.css#~3.0.3",
-    "paper": "~0.9.24"
-  }
+    "paper": "~0.9.24",
+    "opentype.js": "~0.4.10"
+  },
 }
