@@ -19,5 +19,5 @@
     "normalize-css": "normalize.css#~3.0.3",
     "paper": "~0.9.24",
     "opentype.js": "~0.4.10"
-  },
+  }
 }
